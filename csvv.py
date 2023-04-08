@@ -1,28 +1,3 @@
-# import streamlit as st
-# import pandas as pd
-# import openpyxl
-
-# # Upload a file
-# uploaded_file = st.file_uploader("Choose a file", type=["csv", "xlsx", "xls", "json"])
-
-# # If a file was uploaded
-# if uploaded_file:
-#     # Read the file as a pandas DataFrame
-#     if uploaded_file.type == "text/csv":
-#         data = pd.read_csv(uploaded_file)
-#     elif uploaded_file.type == "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet":
-#         data = pd.read_excel(uploaded_file)
-#     elif uploaded_file.type == "application/json":
-#         data = pd.read_json(uploaded_file)
-#     else:
-#         st.write("File type not supported.")
-#         st.stop()
-    
-#     # Display the data
-#     st.write("Column names:", data.columns)
-#     st.write(data)
-
-
 import streamlit as st
 import pandas as pd
 import openpyxl
