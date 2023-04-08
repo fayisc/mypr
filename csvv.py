@@ -1,6 +1,6 @@
 import streamlit as st #to make web-application
 import pandas as pd
-import openpyxl
+# import openpyxl
 
 st.title("Analyse your Data .Quickly!")
 st.subheader("Easy CSV and Excel file analysis")
@@ -24,26 +24,26 @@ if uploaded_file:
         # Display the selected column data
         st.write(column_data)
 
-    # If the file is an Excel file
-    elif file_ext == "xlsx":
-        # Load the Excel file using openpyxl
-        workbook = openpyxl.load_workbook(uploaded_file)
+    # # If the file is an Excel file
+    # elif file_ext == "xlsx":
+    #     # Load the Excel file using openpyxl
+    #     workbook = openpyxl.load_workbook(uploaded_file)
 
-        # Get the active worksheet
-        worksheet = workbook.active
+    #     # Get the active worksheet
+    #     worksheet = workbook.active
 
-        # Create an empty list to store the rows
-        rows = []
+    #     # Create an empty list to store the rows
+    #     rows = []
 
-        # Iterate over the rows and append them to the list
-        for row in worksheet.iter_rows(values_only=True):
-            rows.append(row)
+    #     # Iterate over the rows and append them to the list
+    #     for row in worksheet.iter_rows(values_only=True):
+    #         rows.append(row)
 
-        # Create a pandas DataFrame from the rows
-        data = pd.DataFrame(rows, columns=worksheet[1])
+    #     # Create a pandas DataFrame from the rows
+    #     data = pd.DataFrame(rows, columns=worksheet[1])
 
-        # Print the column names
-        st.write("Column names:", data.columns)
+    #     # Print the column names
+    #     st.write("Column names:", data.columns)
 
         
 
