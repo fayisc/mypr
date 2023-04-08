@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlit as st #to make web-application
 import pandas as pd
 import openpyxl
 
